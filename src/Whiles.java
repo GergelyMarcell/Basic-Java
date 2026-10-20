@@ -1,26 +1,19 @@
-public class Whiles {
-    public void main(){
-        double szam1 = Math.floor(Math.random()*100);
-        double szam2 = Math.floor(Math.random()*100);
-        int cntr = 0;
-        while (szam1 < szam2 && cntr < 10){
-            System.out.print(szam1 + ",");
-            szam1++;
-            cntr++;
-            if(cntr == 10){
-                cntr = 0;
-                System.out.println();
-            }
-        }
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
-        while (szam1 > szam2 && cntr < 10){
-            System.out.print(szam2 + ",");
-            szam2++;
-            cntr++;
-            if(cntr == 10){
-                cntr = 0;
-                System.out.println();
-            }
+public class Whiles {
+    static void main() {
+        List<Integer> l = new ArrayList<>();
+        int db = 0;
+        while (db < 2) {
+            int rnd = (int)(Math.random() * 100);
+            l.add(rnd);
+            db++;
         }
+        Collections.sort(l);
+        IO.println(l);
     }
 }

@@ -1,51 +1,43 @@
 import java.util.Scanner;
 
-public class String_muveletek{
-    static void main() {
-
-        //2.
+public class String_muveletek {
+    static  void main() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Kérek egy vezetéknevet!");
+        // 2.
+        System.out.print("Vezetéknév: ");
         String vnev = sc.nextLine();
-
-        System.out.println("Kérek egy keresztnevet!");
+        System.out.print("Keresztnáv: ");
         String knev = sc.nextLine();
+        System.out.print("Születési hely: ");
+        String szhely = sc.nextLine();
+        System.out.print("Kor: ");
+        int kor = sc.nextInt();
 
-        System.out.println("Kérek egy születési helyet!");
-        String szulhely = sc.nextLine();
+        // 3.
+        String fullName = vnev + " " + knev;
 
-        System.out.println("Kérek egy életkort!");
-        int eletkor = sc.nextInt();
+        // 4.
+        IO.println(fullName.toUpperCase());
 
-        //3.
-        String fullname = vnev + " " + knev;
+        // 5.
+        IO.println(fullName.indexOf(knev));
 
-        //4.
-        System.out.println(fullname.toUpperCase());
+        // 6.
+        IO.println((fullName + " " + szhely).toLowerCase());
 
-        //5.
-        int index = fullname.indexOf(knev);
-        System.out.println(index);
+        // 7.
+        IO.println(kor + " " + szhely + " " + fullName);
 
-        //6.
-        System.out.println(fullname + ", " + szulhely);
+        // 8.
+        IO.println(knev.toUpperCase().startsWith("A") ? "Igen" : "Nem");
 
-        //7.
-        System.out.println(eletkor + ", " + fullname + ", " + szulhely);
+        // 9.
+        IO.println(vnev.toLowerCase().endsWith("t")? "Igen" : "Nem");
 
-        //8.
-        if (knev.startsWith("A")) System.out.println("A betűvel kezdődik");
-        else System.out.println("Nem A betűvel kezdődik");
+        // 10.
+        IO.println(fullName.length());
 
-        //9.
-        if (knev.endsWith("t")) System.out.println("t betűvel végződik");
-        else System.out.println("Nem t betűvel végződik");
-
-        //10.
-        System.out.println(fullname.length());
-
-        //11
-        System.out.println(fullname.replace('i', 'y'));
-
+        // 11.
+        IO.println(fullName.replace('i', 'y'));
     }
 }

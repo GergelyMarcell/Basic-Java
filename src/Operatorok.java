@@ -1,35 +1,30 @@
+import java.awt.*;
 import java.util.Scanner;
 
 public class Operatorok {
     static void main() {
+        // 2.
         Scanner sc = new Scanner(System.in);
-        System.out.println("Adjon meg egy stringet!");
-        String szoveg = sc.nextLine();
-        System.out.println("Adjon meg 1 karakter!");
-        char karakter1 = sc.nextLine().charAt(0);
-        System.out.println("Adjon meg még1 karakter!");
-        char karakter2 = sc.nextLine().charAt(0);
-        System.out.println("Adjon meg 1 integert!");
+        System.out.print("string: ");
+        String szov = sc.nextLine();
+        System.out.print("char1: ");
+        char c1 = sc.nextLine().charAt(0);
+        System.out.print("char2: ");
+        char c2 = sc.nextLine().charAt(0);
+        System.out.print("int1: ");
         int int1 = sc.nextInt();
-        System.out.println("Adjon meg még1 integert!");
+        System.out.print("int2: ");
         int int2 = sc.nextInt();
-        System.out.println("Adjon meg 1 double-t!");
-        double double1 = sc.nextDouble();
-        System.out.println("Adjon meg még1 double-t!");
-        double double2 = sc.nextDouble();
-
-        String osszerak = szoveg + karakter1 + karakter2;
+        System.out.print("double1: ");
+        double d1 = sc.nextDouble();
+        System.out.print("double2: ");
+        double d2 = sc.nextDouble();
+        String egyben = szov + c1 + c2;
         double oszt = (double) int1 / int2;
-        double osszead = double1 + double2;
+        double osszead = d1 + d2;
+        double kivon = int1 - d1;
+        double szoroz = int2 * d2;
 
-        double kivonas = Double.parseDouble(String.valueOf(int1)) - osszead;
-        double szorzas = Double.parseDouble(String.valueOf(int2)) * osszead;
-
-        System.out.println("String és karakterek összerakása:" + osszerak);
-        System.out.println("Két integer elosztása: " + oszt);
-        System.out.println("Két tizedes szám összeadása: " + osszead);
-        System.out.println("Double szám kivonása az egyik integerből: " + osszead);
-        System.out.println("Double szám és a másik integer össze szorzása: " + szorzas);
-
+        IO.println("\n" + egyben + "\n" + oszt + "\n" + osszead + "\n" + kivon + "\n" + szoroz);
     }
 }

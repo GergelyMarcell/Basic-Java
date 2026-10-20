@@ -1,17 +1,18 @@
 import java.util.Scanner;
 
 public class ParosParatlanWhile {
-    static void main(){
+    static void main() {
+
         Scanner sc = new Scanner(System.in);
-        int szam = sc.nextInt();
-        while (szam > 0){
-            if(szam % 2 == 0){
-                System.out.println("Páros!");
-            }
-            else{
-                System.out.println("Páratlan!");
-            }
-            szam = sc.nextInt();
+        int sz = -1;
+        do {
+            System.out.print("Szamot: ");
+            sz = sc.nextInt();
         }
+        while (sz < 0);
+
+        IO.println((sz % 2 == 0) ? "paros" : "paratlan");
+
+
     }
 }
