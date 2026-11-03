@@ -15,40 +15,64 @@ public class mindenesgyakszi {
     }
 
     public static int[] add(int[]arr, int num){
-        boolean vannulla = false;
-        int nullaindex = 0;
-        if(arr.length > 0){
-            for (int i = 0; i < arr.length; i++){
-                if(arr[i] == 0){
-                    vannulla = true;
-                    nullaindex = i;
-                    break;
-                }
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == 0){
+                int[] newArr = arr.clone();
+                newArr[i] = num;
+                return newArr;
             }
         }
-        if(vannulla){
-            arr[nullaindex] = num;
-            return arr;
+
+        int[] newArr = Arrays.copyOf(arr, arr.length+1);
+        newArr[arr.length] = num;
+        return newArr;
+    }
+
+    public static int[] insert(int[] arr, int index, int num)
+    {
+        //ujtomb[arr+1], ind = 0; for(i=0,i<arr;i++){if(i==index){ujtomb[ind] = szam, ind++} ujtomb[ind] = array[i], ind++}
+        int[] newArr = new int[arr.length+1];
+        int ind = 0;
+        for(int i = 0; i < arr.length; i++){
+            if(i == index){
+                newArr[ind] = num;
+                ind++;
+            }
+            newArr[ind] = arr[i];
+            ind++;
         }
-        else if(!vannulla && arr.length > 0){
-            int[] arr2 = new int[arr.length + 1];
-            System.arraycopy(arr,0, arr2,0,arr.length+1);
-            arr2[-1]=num;
-            return arr2;
+        return newArr;
+    }
+
+    public static int[] remove(int[] arr, int num)
+    {
+        //ujarray, egyel kevesebb mint a regi; index = 0, isremoved=false for(i=0; i<array.length;i++){ if(isremoved&&arr[i] != num){ ujarraj[index] = arr[i], index ++, isremoved=true}}
+        int[] newArr = new int[arr.length-1];
+        int ind = 0;
+        boolean isRemoved = false;
+        for(int i = 0; i < arr.length; i++){
+            if(!isRemoved && arr[i] != num){
+                newArr[ind] = arr[i];
+                ind ++;
+            }
         }
-
+        return newArr;
     }
 
-    public static int[] insert(int[] arr, int index, int num){
-        return arr;
-    }
-
-    public static int[] remove(int[] arr, int num){
-        return arr;
-    }
-
-    public static int[] pop(int[]arr, int index){
-        return arr;
+    public static int[] pop(int[]arr, int index)
+    {
+        //ujtomb[-1], ind=0; for(i<arr.length){if(i == index){continue}else{newarr[ind] = array[i]; ind++}} return newarr
+        int[] newArr = new int[arr.length-1];
+        int ind = 0;
+        for(int i = 0; i < arr.length; i++){
+            if(i == index){
+                continue;
+            }else{
+                newArr[ind] = arr[i];
+                ind++;
+            }
+        }
+        return newArr;
     }
 
     public static int dividable(int num, int fizz, int buzz){

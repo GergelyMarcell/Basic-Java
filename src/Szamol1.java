@@ -9,7 +9,7 @@ public class Szamol1 {
         for (int i = 1; i <= 100; i++) {
             if (i % sz == 0) continue;
             if (i == sz * 10)break;
-            IO.print(i + "; ");
+            System.out.println(i + "; ");
         }
     }
 }

@@ -36,12 +36,12 @@ public class Rekurzio {
     static void main() {
         Scanner sc = new Scanner(System.in);
         int szam = sc.nextInt();
-        IO.println(faktorialis(szam));
+        System.out.println(faktorialis(szam));
         int alap = sc.nextInt();
         int hatvany = sc.nextInt();
-        IO.println(hatvany(alap, hatvany));
+        System.out.println(hatvany(alap, hatvany));
         int n = sc.nextInt();
-        IO.println(faktorialis(n));
+        System.out.println(faktorialis(n));
 
         int nn = sc.nextInt();
         hanoi(nn, '1', '2', '3');

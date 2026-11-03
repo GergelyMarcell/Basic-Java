@@ -25,6 +25,6 @@ public class Operatorok {
         double kivon = int1 - d1;
         double szoroz = int2 * d2;
 
-        IO.println("\n" + egyben + "\n" + oszt + "\n" + osszead + "\n" + kivon + "\n" + szoroz);
+        System.out.println("\n" + egyben + "\n" + oszt + "\n" + osszead + "\n" + kivon + "\n" + szoroz);
     }
 }

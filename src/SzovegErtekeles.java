@@ -7,12 +7,18 @@ public class SzovegErtekeles {
         int sz = sc.nextInt();
 
         switch (sz) {
-            case 1: IO.println("elégtelen");break;
-            case 2: IO.println("elégseges");break;
-            case 3: IO.println("közepes");break;
-            case 4: IO.println("jó");break;
-            case 5: IO.println("jeles");break;
-            default: IO.println("Nincs ilyen jegy");break;
+            case 1:
+                System.out.println("elégtelen");break;
+            case 2:
+                System.out.println("elégseges");break;
+            case 3:
+                System.out.println("közepes");break;
+            case 4:
+                System.out.println("jó");break;
+            case 5:
+                System.out.println("jeles");break;
+            default:
+                System.out.println("Nincs ilyen jegy");break;
         }
     }
 }

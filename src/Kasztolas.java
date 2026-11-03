@@ -47,12 +47,12 @@ public class Kasztolas {
         byte b2 = (byte) d2;
 
         System.out.println("-----\n" + d2);
-        IO.println(d2);
-        IO.println(f2);
-        IO.println(l2);
-        IO.println(int3);
-        IO.println(s2);
-        IO.println(b2);
+        System.out.println(d2);
+        System.out.println(f2);
+        System.out.println(l2);
+        System.out.println(int3);
+        System.out.println(s2);
+        System.out.println(b2);
 
 
         float f3 = 6.7420f;
@@ -62,10 +62,10 @@ public class Kasztolas {
         byte b3 = (byte) f3;
 
         System.out.println("-----\n" + f3);
-        IO.println(l3);
-        IO.println(int4);
-        IO.println(s3);
-        IO.println(b3);
+        System.out.println(l3);
+        System.out.println(int4);
+        System.out.println(s3);
+        System.out.println(b3);
 
         long l4 = 42067000;
         int int5 = (int) l4;
@@ -73,23 +73,23 @@ public class Kasztolas {
         byte b4 = (byte) l4;
 
         System.out.println("-----\n" + l4);
-        IO.println(int5);
-        IO.println(s4);
-        IO.println(b4);
+        System.out.println(int5);
+        System.out.println(s4);
+        System.out.println(b4);
 
         int int6 = 67420;
         short s5 = (short) int6;
         byte b5 = (byte) int6;
 
         System.out.println("-----\n" + int6);
-        IO.println(s5);
-        IO.println(b5);
+        System.out.println(s5);
+        System.out.println(b5);
 
         short s6 = 4200;
         byte b6 = (byte) s6;
 
         System.out.println("-----\n" + s6);
-        IO.println(b6);
+        System.out.println(b6);
 
 
     }
