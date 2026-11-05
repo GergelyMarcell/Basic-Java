@@ -30,23 +30,20 @@ public class mindenesgyakszi {
 
     public static int[] insert(int[] arr, int index, int num)
     {
-        //ujtomb[arr+1], ind = 0; for(i=0,i<arr;i++){if(i==index){ujtomb[ind] = szam, ind++} ujtomb[ind] = array[i], ind++}
-        int[] newArr = new int[arr.length+1];
-        int ind = 0;
-        for(int i = 0; i < arr.length; i++){
-            if(i == index){
-                newArr[ind] = num;
-                ind++;
-                continue;
-            }
-            newArr[ind] = arr[i];
-            ind++;
+        if (index >= arr.length) {
+            int[] result = new int[arr.length + 1];
+            for (int i = 0; i < arr.length; i++) result[i] = arr[i];
+            result[arr.length] = num;
+            return result;
         }
 
-        if(index >= arr.length){
-            newArr[ind] = num;
+        int[] result = new int[arr.length];
+
+        for (int i = 0; i < arr.length; i++) {
+            if (i == index) result[i] = num;
+            else result[i] = arr[i];
         }
-        return newArr;
+        return result;
     }
 
     public static int[] remove(int[] arr, int num)
