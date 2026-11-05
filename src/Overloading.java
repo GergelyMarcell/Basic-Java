@@ -50,21 +50,21 @@ public class Overloading {
     static void main() {
         int [] arr = {1, 2, 3};
         double [] arr2 = {1.2, 3.4, 5.6};
-        IO.println(AddNumberToArraySum(3, arr));
-        IO.println(AddNumberToArraySum(3.0, arr2));
+        System.out.println(AddNumberToArraySum(3, arr));
+        System.out.println(AddNumberToArraySum(3.0, arr2));
 
-        IO.println(UserData(30, "John", "Doe"));
-        IO.println(UserData("John", 30, "Doe"));
-        IO.println(UserData("John", "Doe", 30));
+        System.out.println(UserData(30, "John", "Doe"));
+        System.out.println(UserData("John", 30, "Doe"));
+        System.out.println(UserData("John", "Doe", 30));
 
         int [] arrtostring1 = {1, 2, 3};
         double [] arrtostring2 = {1.2, 3.4, 5.6};
         boolean [] arrtostring3 = {true, false, true};
         String [] arrtostring4 = {"a", "b", "c"};
 
-        IO.println(ConvertToString(arrtostring1));
-        IO.println(ConvertToString(arrtostring2));
-        IO.println(ConvertToString(arrtostring3));
-        IO.println(ConvertToString(arrtostring4));
+        System.out.println(ConvertToString(arrtostring1));
+        System.out.println(ConvertToString(arrtostring2));
+        System.out.println(ConvertToString(arrtostring3));
+        System.out.println(ConvertToString(arrtostring4));
     }
 }

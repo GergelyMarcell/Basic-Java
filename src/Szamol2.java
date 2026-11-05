@@ -8,10 +8,10 @@ public class Szamol2 {
         for (int i = 1; i <= 100; i++) {
             if (i % sz != 0) continue;
             if (i == sz * 10) {
-                IO.println(sz);
+                System.out.println(sz);
                 break;
             }
-            IO.print(i + "; ");
+            System.out.println(i + "; ");
         }
     }
 }

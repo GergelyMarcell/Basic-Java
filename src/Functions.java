@@ -6,15 +6,15 @@ public class Functions {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        IO.print("Szám: ");
+        System.out.println("Szám: ");
 
         String[] arr = {"koal", "pand", "zebr", "anacond", "bo", "chinchill", "cobr", "gorill", "hyen", "hydr", "iguan", "impal", "pum", "tarantul", "piranh"};
 
         int szam = sc.nextInt();
-        IO.println("1. " + gausSum(szam));
-        IO.println("2. " + factorial(szam));
-        IO.println("3. " + fibonacci(szam));
-        IO.println("4. " + Arrays.toString(appendAFunc(arr)));
+        System.out.println("1. " + gausSum(szam));
+        System.out.println("2. " + factorial(szam));
+        System.out.println("3. " + fibonacci(szam));
+        System.out.println("4. " + Arrays.toString(appendAFunc(arr)));
 
     }
 

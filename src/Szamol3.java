@@ -10,12 +10,12 @@ public class Szamol3 {
 
         for (int i = 1; i <= 100; i++) {
             if (i % sz1 == 0 && i % sz2 == 0) {
-                IO.println("FizzBuzz");
+                System.out.println("FizzBuzz");
                 break;
             }
-            else if (i % sz1 == 0) IO.println("Fizz");
-            else if (i % sz2 == 0) IO.println("Buzz");
-            else IO.println(i);
+            else if (i % sz1 == 0) System.out.println("Fizz");
+            else if (i % sz2 == 0) System.out.println("Buzz");
+            else System.out.println(i);
         }
     }
 }

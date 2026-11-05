@@ -14,6 +14,6 @@ public class Whiles {
             db++;
         }
         Collections.sort(l);
-        IO.println(l);
+        System.out.println(l);
     }
 }

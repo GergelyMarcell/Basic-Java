@@ -11,7 +11,7 @@ public class ParosParatlanWhile {
         }
         while (sz < 0);
 
-        IO.println((sz % 2 == 0) ? "paros" : "paratlan");
+        System.out.println((sz % 2 == 0) ? "paros" : "paratlan");
 
 
     }

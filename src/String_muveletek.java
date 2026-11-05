@@ -17,27 +17,27 @@ public class String_muveletek {
         String fullName = vnev + " " + knev;
 
         // 4.
-        IO.println(fullName.toUpperCase());
+        System.out.println(fullName.toUpperCase());
 
         // 5.
-        IO.println(fullName.indexOf(knev));
+        System.out.println(fullName.indexOf(knev));
 
         // 6.
-        IO.println((fullName + " " + szhely).toLowerCase());
+        System.out.println((fullName + " " + szhely).toLowerCase());
 
         // 7.
-        IO.println(kor + " " + szhely + " " + fullName);
+        System.out.println(kor + " " + szhely + " " + fullName);
 
         // 8.
-        IO.println(knev.toUpperCase().startsWith("A") ? "Igen" : "Nem");
+        System.out.println(knev.toUpperCase().startsWith("A") ? "Igen" : "Nem");
 
         // 9.
-        IO.println(vnev.toLowerCase().endsWith("t")? "Igen" : "Nem");
+        System.out.println(vnev.toLowerCase().endsWith("t")? "Igen" : "Nem");
 
         // 10.
-        IO.println(fullName.length());
+        System.out.println(fullName.length());
 
         // 11.
-        IO.println(fullName.replace('i', 'y'));
+        System.out.println(fullName.replace('i', 'y'));
     }
 }
