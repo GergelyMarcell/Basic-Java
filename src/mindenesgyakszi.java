@@ -28,8 +28,7 @@ public class mindenesgyakszi {
         return newArr;
     }
 
-    public static int[] insert(int[] arr, int index, int num)
-    {
+    public static int[] insert(int[] arr, int index, int num) {
         if (index >= arr.length) {
             int[] result = new int[arr.length + 1];
             for (int i = 0; i < arr.length; i++) result[i] = arr[i];
