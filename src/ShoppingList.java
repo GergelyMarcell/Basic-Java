@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ShoppingList {
-    public static String van(LinkedList<String> bevasarlolista, String dolog){
+    public static String van(List<String> bevasarlolista, String dolog){
         return bevasarlolista.contains(dolog) ? "yes":"no";
     }
     public static void main(String[] args){
