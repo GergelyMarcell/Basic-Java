@@ -1,10 +1,12 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Dictionarymertszar {
     public static void MapIntroduction1(){
         System.out.println("1.");
-        Map<Integer,Character> dic1 = new HashMap<>();
+        Map<Integer,Character> dic1 = new TreeMap<>();
         System.out.println(dic1.isEmpty());
 
         dic1.putAll(Map.of(97 , 'a', 98 , 'b', 99 , 'c', 65 , 'A', 66 , 'B', 67 , 'C'));
@@ -25,7 +27,7 @@ public class Dictionarymertszar {
 
     public static void MapIntroduction2(){
         System.out.println("2.");
-        Map<String,String> dic2 = new HashMap<>(Map.of("978-1-60309-452-8" , "A Letter to Jo", "978-1-60309-459-7" , "Lupus", "978-1-60309-444-3" , "Red Panda and Moon Bear", "978-1-60309-461-0" , "The Lab"));
+        Map<String,String> dic2 = new TreeMap<>(Map.of("978-1-60309-452-8" , "A Letter to Jo", "978-1-60309-459-7" , "Lupus", "978-1-60309-444-3" , "Red Panda and Moon Bear", "978-1-60309-461-0" , "The Lab"));
         for(Map.Entry e : dic2.entrySet()){
             System.out.println(e.getValue() + " (ISBN:" + e.getKey() + ")");
         }
